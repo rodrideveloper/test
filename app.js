@@ -7,7 +7,7 @@ app.get('/',function(req, res){
   res.render('index.html');
 });
 
-
-app.listen(3000,function(res,res){   
-	console.log('Server Corriendo en puerto ' + 3500)
+var port=var port = Number(process.env.PORT || 5000);
+app.listen(port,function(res,res){   
+	console.log('Server Corriendo en puerto ' + port)
 });
